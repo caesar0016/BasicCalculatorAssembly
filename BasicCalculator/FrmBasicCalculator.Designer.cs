@@ -166,7 +166,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmBasicCalculator";
             this.Text = "FrmBasicCalculator";
-            this.Load += new System.EventHandler(this.FrmBasicCalculator_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

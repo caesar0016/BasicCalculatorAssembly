@@ -23,12 +23,6 @@ namespace BasicCalculator
             this.Close();
         }
 
-        private void FrmBasicCalculator_Load(object sender, EventArgs e)
-        {
-           
-
-        }
-
         private void btnCompute_Click(object sender, EventArgs e)
         {
             try
@@ -37,10 +31,12 @@ namespace BasicCalculator
                 float num1 = float.Parse(txtNum1.Text.ToString());
                 float num2 = float.Parse(txtNum2.Text.ToString());
 
+                float answer;
+
                 if (cmbOperator.Text == "+")
                 {
 
-                    float answer = BasicComputation.Addition(num1, num2);
+                    answer = BasicComputation.Addition(num1, num2);
 
                     lblTotal.Text = answer.ToString();
 
@@ -48,7 +44,7 @@ namespace BasicCalculator
                 if (cmbOperator.Text == "-")
                 {
 
-                    float answer = BasicComputation.Subtraction(num1, num2);
+                    answer = BasicComputation.Subtraction(num1, num2);
 
                     lblTotal.Text = answer.ToString();
 
@@ -56,7 +52,7 @@ namespace BasicCalculator
                 if (cmbOperator.Text == "*")
                 {
 
-                    float answer = BasicComputation.Multiplication(num1, num2);
+                    answer = BasicComputation.Multiplication(num1, num2);
 
                     lblTotal.Text = answer.ToString();
 
@@ -64,7 +60,7 @@ namespace BasicCalculator
                 if (cmbOperator.Text == "/")
                 {
 
-                    float answer = BasicComputation.Division(num1, num2);
+                    answer = BasicComputation.Division(num1, num2);
 
                     lblTotal.Text = answer.ToString();
 
